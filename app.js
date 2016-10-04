@@ -77,6 +77,17 @@ function CountDown() {
 
 
 
+// Turn cursor into crosshair when in game
+var wholePage = $('body');
+var crossHair = function () {
+   wholePage.css( 'cursor' , 'url(assets/pow-01.png), crossHair');
+ };
+
+// Call functions here
+//circle.hover(crossHair);
+wholePage.hover(crossHair);
+
+});
 
 
 
@@ -108,5 +119,4 @@ function CountDown() {
 
 
 
- })
 
