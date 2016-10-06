@@ -25,54 +25,152 @@ target1.one('click', function(){
   //when clicked remove image of clown, this determines its been hit
     console.log("HIT! #1");
     target1.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+    // get score
+
+    var span = $('span');
+    var spanValue = $('span').html();
+    var currentScore = parseInt(spanValue);
+    var clownDownIncreaseOne = parseInt(currentScore) + 1;
+    span.html(clownDownIncreaseOne);
+
+
+
+
+
   })
 target2.one('click', function(){
     console.log("HIT! #2");
     target2.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
+
+
 target3.one('click', function(){
     console.log("HIT! #3");
     target3.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target4.one('click', function(){
     console.log("HIT! #4");
     target4.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target5.one('click', function(){
     console.log("HIT! #5");
    target5.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target6.one('click', function(){
     console.log("HIT! #5");
    target6.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target7.one('click', function(){
     console.log("HIT! #5");
    target7.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target8.one('click', function(){
     console.log("HIT! #5");
    target8.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target9.one('click', function(){
     console.log("HIT! #4");
     target9.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target10.one('click', function(){
     console.log("HIT! #5");
    target10.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target11.one('click', function(){
     console.log("HIT! #5");
    target11.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target12.one('click', function(){
     console.log("HIT! #5");
    target12.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 target13.one('click', function(){
     console.log("HIT! #5");
    target13.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+
+      var span = $('span');
+      var spanValue = $('span').html();
+      var currentScore = parseInt(spanValue);
+      var clownDownIncreaseOne = parseInt(currentScore) + 1;
+      span.html(clownDownIncreaseOne);
+
   })
 // timer function when 00:00 STOP game
 
