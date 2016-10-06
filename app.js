@@ -1,8 +1,8 @@
-
 $(document).ready(function(){
     console.log("JavaScript Hooked Up");
 
-//GLOBAL VARIABLES
+
+//GLOBAL VARIABLES OF CLOWNS
 
 var target1 = $('#target1');
 var target2 = $('#target2');
@@ -16,6 +16,7 @@ var target9 = $('#target9');
 var target10 = $('#target10');
 var target11 = $('#target11');
 var target12 = $('#target12');
+var target13 = $('#target13');
 
 //Click Event for Each Clown
 //number is determined in HTML div ID
@@ -23,47 +24,68 @@ var target12 = $('#target12');
 target1.one('click', function(){
   //when clicked remove image of clown, this determines its been hit
     console.log("HIT! #1");
-    target1.css({
-      border: '3px solid white',
-      color: 'white'
-    });;
+    target1.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
   })
 target2.one('click', function(){
     console.log("HIT! #2");
-    target2.css({
-      border: '3px solid white',
-      color: 'white'
-    });;
+    target2.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
   })
 target3.one('click', function(){
     console.log("HIT! #3");
-    target3.css({
-      border: '3px solid white',
-      color: 'white'
-    });;
+    target3.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
   })
-$("#target4").one('click', function(){
+target4.one('click', function(){
     console.log("HIT! #4");
-    target4.css({
-      border: '3px solid white',
-      color: 'white'
-    });;
+    target4.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
   })
-$("#target5").one('click', function(){
+target5.one('click', function(){
     console.log("HIT! #5");
-    target5.css({
-      border: '3px solid white',
-      color: 'white'
-    });;
+   target5.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
   })
-
+target6.one('click', function(){
+    console.log("HIT! #5");
+   target6.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target7.one('click', function(){
+    console.log("HIT! #5");
+   target7.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target8.one('click', function(){
+    console.log("HIT! #5");
+   target8.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target9.one('click', function(){
+    console.log("HIT! #4");
+    target9.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target10.one('click', function(){
+    console.log("HIT! #5");
+   target10.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target11.one('click', function(){
+    console.log("HIT! #5");
+   target11.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target12.one('click', function(){
+    console.log("HIT! #5");
+   target12.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
+target13.one('click', function(){
+    console.log("HIT! #5");
+   target13.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
+  })
 // timer function when 00:00 STOP game
-/*
+
 function CountDown() {
 
 }
-*/
 
+
+
+
+
+
+//if target 1 clicked add 1 to span = score
 
 // reset functions for when game is over
 
@@ -71,21 +93,15 @@ function CountDown() {
 // https://www.youtube.com/watch?v=51rg0Gh8LaM
 
 
-//mouse hover over body
+//randomize clowns when page starts
 
 
 
 
 
-// Turn cursor into crosshair when in game
-var wholePage = $('body');
-var crossHair = function () {
-   wholePage.css( 'cursor' , 'url(assets/pow-01.png), crossHair');
- };
 
 // Call functions here
-//circle.hover(crossHair);
-wholePage.hover(crossHair);
+
 
 });
 
