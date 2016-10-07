@@ -18,176 +18,66 @@ var target11 = $('#target11');
 var target12 = $('#target12');
 var target13 = $('#target13');
 
-//Click Event for Each Clown
-//number is determined in HTML div ID
-//.one only lets you click once
-target1.one('click', function(){
-  //when clicked remove image of clown, this determines its been hit
-    console.log("HIT! #1");
-    target1.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-    // get score
 
-    var span = $('span');
-    var spanValue = $('span').html();
+
+////////////
+var targets = {target1, target2, target3, target5, target6, target7,
+target8, target9, target10, target11, target12, target13};
+
+var clownImages = [];
+
+//establish function to remove all repeated code
+$('.clown').one('click', function shootClown(e){
+    console.log("HIT!  " + $(this));
+
+    //change photo to redx
+    $(this).css({'background-image': 'url("images/redx.png")', 'background-repeat' : 'no-repeat' , 'background-size' : '12vw 23vh' });
+    // get score
+    //increment score by one
+    var span = $('#score');
+    var spanValue = $('#score').html();
     var currentScore = parseInt(spanValue);
     var clownDownIncreaseOne = parseInt(currentScore) + 1;
     span.html(clownDownIncreaseOne);
+})
 
 
 
 
 
-  })
-target2.one('click', function(){
-    console.log("HIT! #2");
-    target2.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-
-
-target3.one('click', function(){
-    console.log("HIT! #3");
-    target3.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target4.one('click', function(){
-    console.log("HIT! #4");
-    target4.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target5.one('click', function(){
-    console.log("HIT! #5");
-   target5.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target6.one('click', function(){
-    console.log("HIT! #5");
-   target6.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target7.one('click', function(){
-    console.log("HIT! #5");
-   target7.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target8.one('click', function(){
-    console.log("HIT! #5");
-   target8.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target9.one('click', function(){
-    console.log("HIT! #4");
-    target9.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target10.one('click', function(){
-    console.log("HIT! #5");
-   target10.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target11.one('click', function(){
-    console.log("HIT! #5");
-   target11.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target12.one('click', function(){
-    console.log("HIT! #5");
-   target12.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-target13.one('click', function(){
-    console.log("HIT! #5");
-   target13.css({'background-image': 'url("images/redx.png")', 'background-size' : '120px 150px'});
-
-      var span = $('span');
-      var spanValue = $('span').html();
-      var currentScore = parseInt(spanValue);
-      var clownDownIncreaseOne = parseInt(currentScore) + 1;
-      span.html(clownDownIncreaseOne);
-
-  })
-// timer function when 00:00 STOP game
-
+//timer function
 function CountDown() {
+  var clock = $('#clock');
+  var clockString = $('#clock').html();
+  var clockInt = parseInt(clockString);
+  var decreasedClock = (clockInt - 1 );
 
+// stop when hits 0
+  if (clockInt > 0 ){
+    var timeDescend = clock.html("0" +decreasedClock);
+  } else{
+    clearInterval(countDownInterval);
+    alert("TIMES UP!!!");
+  }
 }
 
 
+ countDownInterval = setInterval(CountDown, 1000);
 
 
 
+//WHEN SCORE = 13 SHUFFLE CLOWNS! FOR NEXT ROUND & RESTART BOARD
 
-//if target 1 clicked add 1 to span = score
 
-// reset functions for when game is over
 
-//music on and off function
+//add empty clowns?
+
+
+// timer function when 0 seconds on clock =  STOP game
+
+
+
+//music on and off function?
 // https://www.youtube.com/watch?v=51rg0Gh8LaM
 
 
@@ -195,18 +85,12 @@ function CountDown() {
 
 
 
-
-
-
-// Call functions here
-
-
 });
 
 
 
 
-
+var countDownInterval;
 
 
 
