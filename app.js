@@ -82,7 +82,7 @@ setInterval(function() {
       $('#target12').css({'background-image': 'url("images/clown3.png")'});
       $('#target13').css({'background-image': 'url("images/clown1.png")'});
   } if (roundScore >= 65){
-    alert("YOURE AMAZING!")
+    alert("YOURE AMAZING! 65 CLOWNS!")
     return false;
 
   }
@@ -161,14 +161,16 @@ function CountDown() {
 
 // stop when hits 0
   if (clockInt > 0 ){
-    var timeDescend = clock.html("0" +decreasedClock);
+    var timeDescend = clock.html( +decreasedClock);
   } else{
     clearInterval(countDownInterval);
-    alert("TIMES UP!!!");
+    var finalScore = $('span').text();
+    alert("TIMES UP!!! \n YOU HIT  " + finalScore + "  CLOWNS!!");
   }
 }
  countDownInterval = setInterval(CountDown, 1000);
 // timer function when 0 seconds on clock =  STOP game
+
 
 });
 
