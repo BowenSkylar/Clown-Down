@@ -84,7 +84,7 @@ setInterval(function() {
   }
   else
   return false;
-}, 800);
+}, 600);
 
 // when document loads below
 $(document).ready(function(){
