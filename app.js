@@ -1,4 +1,4 @@
-alert("The game will start now!")
+alert("The game will start now, You have 30 seconds to get all the clowns down!")
 setInterval(function() {
   var roundScore = parseInt($('#score').html());
 
