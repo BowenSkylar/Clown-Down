@@ -1,8 +1,4 @@
-//clown objects
-//change background image if == 13
-
-
-
+alert("The game will start now!")
 setInterval(function() {
   var roundScore = parseInt($('#score').html());
 
@@ -93,6 +89,7 @@ setInterval(function() {
 // when document loads below
 $(document).ready(function(){
     console.log("JavaScript Hooked Up");
+
 
 
 //GLOBAL VARIABLES OF CLOWNS
